@@ -33,10 +33,12 @@ while me <5 and comp <5:
             print("It got a point!")
             print(me)
             print(comp)
-    if me == comp:
-        print("Both chose", me)
+    if my_choice == comp_choice:
+        print("Both chose", comp_choice)
         print(me)
         print(comp)
+    if my_choice not in options:
+        print("Pick rock paper or scissors")
 
 if me == 5:
     print("You won!")
@@ -47,4 +49,3 @@ else:
     
     
     
-
