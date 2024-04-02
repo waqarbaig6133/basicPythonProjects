@@ -33,6 +33,10 @@ while me <5 and comp <5:
             print("It got a point!")
             print(me)
             print(comp)
+    if me == comp:
+        print("Both chose", me)
+        print(me)
+        print(comp)
 
 if me == 5:
     print("You won!")
