@@ -22,7 +22,7 @@ for x in collection:
     if x[::-1] not in collection:
         collection.append(x[::-1])
 print(collection)
-if (factorial(len(thi))/factorial(len(thi)-len(set(thi)))) == len(collection):
+if (factorial(len(thi))/factorial(len(thi)-len(set(thi))+1)) == len(collection):
     print('Good')
 else:
     print('Not')
