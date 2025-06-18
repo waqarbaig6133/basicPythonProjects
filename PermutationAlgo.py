@@ -1,4 +1,6 @@
-collection = ['ABC']
+from math import factorial
+thi = input('Enter your word: ')
+collection = [thi]
 def perm(x):
     thing = list(x)
     i = 0
@@ -13,8 +15,14 @@ def perm(x):
         i+=1
         if i == len(thing):
             i = 0
-perm('ABC')
+perm(thi)
+for x in collection:
+    perm(x)
 for x in collection:
     if x[::-1] not in collection:
         collection.append(x[::-1])
 print(collection)
+if (factorial(len(thi))/factorial(len(thi)-len(set(thi)))) == len(collection):
+    print('Good')
+else:
+    print('Not')
